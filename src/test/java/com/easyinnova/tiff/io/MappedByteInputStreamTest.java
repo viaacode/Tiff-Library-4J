@@ -19,21 +19,23 @@
 package com.easyinnova.tiff.io;
 
 import static java.io.File.separator;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.File;
 
-import junit.framework.TestCase;
+import org.junit.jupiter.api.Test;
 
 /**
  * The type Random access file input stream test.
  */
-public class MappedByteInputStreamTest extends TestCase {
+public class MappedByteInputStreamTest {
 
   /**
    * Test read.
    *
    * @throws Exception the exception
    */
+  @Test
   public void testRead() throws Exception {
     MappedByteInputStream ascii = new MappedByteInputStream(new File("src" + separator + "test" + separator + "resources" + separator + "io" + separator + "asciiTest.hex"));
     assertEquals(65, ascii.read());

@@ -32,13 +32,13 @@
 package com.easyinnova.tiff.profiles;
 
 import static java.io.File.separator;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.easyinnova.tiff.model.TiffDocument;
 import com.easyinnova.tiff.reader.TiffReader;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 // TODO: Auto-generated Javadoc
 /**
@@ -58,7 +58,7 @@ public class TiffITProfileTest {
   /**
    * Pre test.
    */
-  @Before
+  @BeforeEach
   public void PreTest() {
     boolean ok = true;
     try {

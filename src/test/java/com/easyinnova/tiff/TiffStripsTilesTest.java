@@ -19,8 +19,8 @@
 package com.easyinnova.tiff;
 
 import static java.io.File.separator;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 import com.easyinnova.tiff.model.ImageStrips;
 import com.easyinnova.tiff.model.ImageTiles;
@@ -31,8 +31,8 @@ import com.easyinnova.tiff.model.Tile;
 import com.easyinnova.tiff.model.types.IFD;
 import com.easyinnova.tiff.reader.TiffReader;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 /**
  * JUnit Tests for the class TiffReader.
@@ -67,7 +67,7 @@ public class TiffStripsTilesTest {
   /**
    * Pre test.
    */
-  @Before
+  @BeforeEach
   public void PreTest() {
     boolean ok = true;
     try {

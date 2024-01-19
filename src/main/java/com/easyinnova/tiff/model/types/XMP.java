@@ -30,12 +30,12 @@
  */
 package com.easyinnova.tiff.model.types;
 
-import com.adobe.xmp.XMPException;
-import com.adobe.xmp.XMPIterator;
-import com.adobe.xmp.XMPMeta;
-import com.adobe.xmp.XMPMetaFactory;
-import com.adobe.xmp.options.SerializeOptions;
-import com.adobe.xmp.properties.XMPPropertyInfo;
+import com.adobe.internal.xmp.XMPException;
+import com.adobe.internal.xmp.XMPIterator;
+import com.adobe.internal.xmp.XMPMeta;
+import com.adobe.internal.xmp.XMPMetaFactory;
+import com.adobe.internal.xmp.options.SerializeOptions;
+import com.adobe.internal.xmp.properties.XMPPropertyInfo;
 import com.easyinnova.tiff.io.TiffOutputStream;
 import com.easyinnova.tiff.model.Metadata;
 import com.easyinnova.tiff.model.MetadataObject;

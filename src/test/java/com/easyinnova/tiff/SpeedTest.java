@@ -19,15 +19,15 @@
 package com.easyinnova.tiff;
 
 import static java.io.File.separator;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.easyinnova.tiff.model.TagValue;
 import com.easyinnova.tiff.model.TiffDocument;
 import com.easyinnova.tiff.model.types.IFD;
 import com.easyinnova.tiff.reader.TiffReader;
 
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 /**
  * The Class SpeedTest.
@@ -62,7 +62,7 @@ public class SpeedTest {
   /**
    * Pre test.
    */
-  @Before
+  @BeforeEach
   public void PreTest() {
     boolean ok = true;
     try {

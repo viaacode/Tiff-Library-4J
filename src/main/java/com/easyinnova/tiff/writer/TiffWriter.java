@@ -31,7 +31,7 @@
  */
 package com.easyinnova.tiff.writer;
 
-import com.adobe.xmp.XMPException;
+import com.adobe.internal.xmp.XMPException;
 import com.easyinnova.tiff.io.TiffInputStream;
 import com.easyinnova.tiff.io.TiffOutputStream;
 import com.easyinnova.tiff.model.IfdTags;

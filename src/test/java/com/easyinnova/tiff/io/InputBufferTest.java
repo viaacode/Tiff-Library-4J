@@ -18,22 +18,24 @@
  */
 package com.easyinnova.tiff.io;
 
-import static java.io.File.separator;
+import org.junit.jupiter.api.Test;
 
-import junit.framework.TestCase;
+import static java.io.File.separator;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.File;
 
 /**
  * JUnit Tests for the class InputBufferTest.
  */
-public class InputBufferTest extends TestCase {
+public class InputBufferTest {
 
   /**
    * Test read.
    *
    * @throws Exception the exception
    */
+  @Test
   public void testRead() throws Exception {
     TiffInputStream ascii = new TiffInputStream(new File("src" + separator + "test" + separator + "resources" + separator + "io" + separator + "asciiTest.hex"));
     InputBuffer input = new InputBuffer(ascii);

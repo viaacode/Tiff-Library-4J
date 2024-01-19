@@ -19,11 +19,11 @@
 package com.easyinnova.tiff;
 
 import static java.io.File.separator;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import com.easyinnova.tiff.reader.TiffReader;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 /**
  * Testing class.

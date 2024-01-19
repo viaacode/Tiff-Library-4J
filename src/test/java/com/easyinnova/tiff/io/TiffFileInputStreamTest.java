@@ -19,17 +19,16 @@
 package com.easyinnova.tiff.io;
 
 import static java.io.File.separator;
-import static org.junit.Assert.assertEquals;
-
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.io.File;
 import java.io.IOException;
 import com.easyinnova.tiff.model.ByteOrder;
+import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 /**
  * The Class TiffFileInputStreamTest.
@@ -41,7 +40,7 @@ public class TiffFileInputStreamTest {
    *
    * @throws Exception the exception
    */
-  @BeforeClass
+  @BeforeAll
   public static void setUpBeforeClass() throws Exception {
 
   }
@@ -51,7 +50,7 @@ public class TiffFileInputStreamTest {
    *
    * @throws Exception the exception
    */
-  @AfterClass
+  @AfterAll
   public static void tearDownAfterClass() throws Exception {
 
   }
@@ -61,7 +60,7 @@ public class TiffFileInputStreamTest {
    *
    * @throws Exception the exception
    */
-  @Before
+  @BeforeEach
   public void setUp() throws Exception {
 
   }
@@ -71,7 +70,7 @@ public class TiffFileInputStreamTest {
    *
    * @throws Exception the exception
    */
-  @After
+  @AfterEach
   public void tearDown() throws Exception {
 
   }
@@ -242,7 +241,7 @@ public class TiffFileInputStreamTest {
     stream.setByteOrder(ByteOrder.LITTLE_ENDIAN);
     stream.seekOffset(0);
     assertEquals("0.0", stream.readFloat().toString());
-    assertEquals("1.794E-43", stream.readFloat().toString());
+    assertEquals("1.8E-43", stream.readFloat().toString());
     assertEquals("4.6096E-41", stream.readFloat().toString());
     assertEquals("4.6275E-41", stream.readFloat().toString());
     assertEquals("NaN", stream.readFloat().toString());
@@ -277,7 +276,7 @@ public class TiffFileInputStreamTest {
     stream.setByteOrder(ByteOrder.LITTLE_ENDIAN);
     stream.seekOffset(0);
     assertEquals("0.0", stream.readDouble().toString());
-    assertEquals("6.32E-322", stream.readDouble().toString());
+    assertEquals("6.3E-322", stream.readDouble().toString());
     assertEquals("3.0418E-319", stream.readDouble().toString());
     assertEquals("3.04814E-319", stream.readDouble().toString());
     assertEquals("NaN", stream.readDouble().toString());

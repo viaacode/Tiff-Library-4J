@@ -19,21 +19,23 @@
 package com.easyinnova.tiff.io;
 
 import static java.io.File.separator;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import junit.framework.TestCase;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 
 /**
  * The type Paged input buffer test.
  */
-public class PagedInputBufferTest extends TestCase {
+public class PagedInputBufferTest {
 
   /**
    * Test read.
    *
    * @throws Exception the exception
    */
+  @Test
   public void testRead() throws Exception {
     TiffInputStream ascii = new TiffInputStream(new File("src" + separator + "test" + separator + "resources" + separator + "io" + separator + "asciiTest.hex"));
     PagedInputBuffer input = new PagedInputBuffer(ascii);

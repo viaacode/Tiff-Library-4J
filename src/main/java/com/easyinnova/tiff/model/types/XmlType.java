@@ -30,11 +30,10 @@
  */
 package com.easyinnova.tiff.model.types;
 
-import com.adobe.xmp.XMPException;
-import com.adobe.xmp.XMPMetaFactory;
-import com.adobe.xmp.options.SerializeOptions;
+import com.adobe.internal.xmp.XMPException;
 import com.easyinnova.tiff.io.TiffOutputStream;
 import com.easyinnova.tiff.model.TagValue;
+import com.adobe.internal.xmp.options.SerializeOptions;
 
 import java.io.IOException;
 import java.io.StringReader;
